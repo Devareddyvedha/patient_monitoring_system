@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+env/
+
+# ML models
+*.pkl
+
+# Datasets (VERY IMPORTANT)
+backend/dataset/
+*.csv
+
+# OS files
+.DS_Store
+Thumbs.db
