@@ -1,0 +1,107 @@
+/* ===== GLOBAL ===== */
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #f5f7fb;
+}
+
+/* ===== LAYOUT ===== */
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #1f2937;
+  color: #fff;
+  padding: 20px;
+}
+
+.main {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.main-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== HEADER ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.live {
+  color: green;
+  font-weight: bold;
+}
+
+/* ===== STATS ===== */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.stat {
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  margin-top: 32px;
+}
+
+/* ===== CHARTS ===== */
+.charts {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+/* ===== CARDS ===== */
+.card {
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+/* ===== BADGES ===== */
+.badge-high {
+  color: #ef4444;
+  font-weight: bold;
+}
+
+.badge-warning {
+  color: #f59e0b;
+  font-weight: bold;
+}
+
+.badge-normal {
+  color: #22c55e;
+  font-weight: bold;
+}

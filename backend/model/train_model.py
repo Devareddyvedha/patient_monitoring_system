@@ -8,7 +8,8 @@ import joblib
 
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_PATH = os.path.join(BASE_DIR, "..", "dataset", "2015.csv")
+DATA_PATH = os.path.join(BASE_DIR, "..", "..", "dataset", "2015.csv")
+
 
 df = pd.read_csv(DATA_PATH, low_memory=False)
 print("Original shape:", df.shape)
@@ -82,4 +83,13 @@ y_pred = model.predict(X_test)
 print(classification_report(y_test, y_pred))
 
 joblib.dump(model, "health_model.pkl")
+# Save feature names
+joblib.dump(X.columns.tolist(), "features.pkl")
+
+# Save label mapping
+label_mapping = dict(zip(le.classes_, le.transform(le.classes_)))
+joblib.dump(label_mapping, "label_mapping.pkl")
+
+print("Features and label mapping saved.")
+
 print("Model training completed and saved.")

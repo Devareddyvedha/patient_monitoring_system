@@ -1,4 +1,23 @@
-# Python
+# ===============================
+# Node / Expo / React Native
+# ===============================
+node_modules/
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Metro
+.metro-health-check*
+
+# Debug logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# ===============================
+# Python / Backend
+# ===============================
 __pycache__/
 *.pyc
 *.pyo
@@ -10,10 +29,35 @@ env/
 # ML models
 *.pkl
 
-# Datasets (VERY IMPORTANT)
+# ===============================
+# Datasets & Generated Data
+# ===============================
 backend/dataset/
 *.csv
+patient_history.csv
+timeline.json
 
-# OS files
+# ===============================
+# Native / Mobile
+# ===============================
+/ios
+/android
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# ===============================
+# OS / Editor
+# ===============================
 .DS_Store
 Thumbs.db
+*.pem
+
+# ===============================
+# TypeScript
+# ===============================
+*.tsbuildinfo
